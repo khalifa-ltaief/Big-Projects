@@ -1,0 +1,199 @@
+.afacad-flux-uniquifier {
+  font-family: "Afacad Flux", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Afacad Flux", sans-serif;
+}
+body {
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo a img {
+  width: 150px;
+}
+form {
+  width: 100%;
+}
+form .login--box {
+  margin: 0 auto;
+  width: 40%;
+  background-color: white;
+  border-radius: 10px;
+}
+form .login--box h1 {
+  padding: 10px 0 15px;
+  text-align: center;
+}
+form .login--box .input--box {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+.input-container {
+  position: relative;
+}
+form .login--box .input--box .input-container label {
+  font-weight: 500;
+}
+form .login--box .input--box .input-container > i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-20%);
+  color: gray;
+}
+.test {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-20%);
+}
+form .login--box .input--box .input-container div i {
+  color: gray;
+  cursor: pointer;
+}
+form .login--box .input--box .input-container div i.active::before {
+  content: "\f070";
+}
+form .login--box .input--box .input-container input {
+  padding: 10px 10px 10px 40px;
+  border: 1px solid transparent;
+  border-color: transparent transparent #8d8b8b transparent;
+  margin-bottom: 10px;
+  outline: none;
+  width: 100%;
+}
+form .login--box .input--box a {
+  display: flex;
+  justify-content: end;
+  padding: 10px 0 10px;
+  text-decoration: none;
+  color: gray;
+  font-weight: 500;
+}
+form .login--box .input--box button {
+  padding: 10px;
+  font-weight: 600;
+  width: 80%;
+  font-size: 15px;
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  border-radius: 20px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+form .login--box .socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+form .login--box .socials h3,
+form .login--box .signup--box h3 {
+  padding-bottom: 15px;
+  font-weight: 300;
+  font-size: 16px;
+}
+form .login--box .socials .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+form .login--box .socials .links img {
+  border-radius: 50%;
+  width: 40px;
+}
+form .login--box .socials .links img:nth-child(3) {
+  background-color: rgb(223, 223, 223);
+}
+form .login--box .signup--box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+form .login--box .signup--box a {
+  margin-bottom: 10px;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: gray;
+  cursor: pointer;
+  padding: 10px 40px;
+}
+form .login--box .signup--box a:hover {
+  background: #ebeaea;
+}
+.button {
+  margin: 20px auto 40px !important;
+}
+.message-box {
+  padding: 10px;
+  border: 1px solid red;
+  width: 99%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 500;
+  background: #ff000038;
+}
+@media screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+    height: unset;
+  }
+  form .login--box {
+    width: 99%;
+    margin-bottom: 20px;
+  }
+  .logo {
+    position: unset;
+  }
+}
